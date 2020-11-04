@@ -15,8 +15,15 @@ function writePassword() {
   var mixarray4 =[characterstring]
   var mixarray5 = [characterstring2,numberstring,specialcharstring]
   var mixarray6 = [characterstring2,numberstring]
-  var mixarray7 = [characterstring2]
-  var mixarray8 = [numberstring,]
+  var mixarray7 = [characterstring2,specialcharstring]
+  var mixarray8 = [characterstring2]
+  var mixarray9 = [numberstring,specialcharstring,characterstring]
+  var mixarray10 = [numberstring,characterstring]
+  var mixarray11 = [numberstring,specialcharstring]
+  var mixarray12 = [numberstring]
+  var mixarray13 = [specialcharstring,characterstring2,characterstring]
+  var mixarray14 = [specialcharstring,characterstring]
+  var mixarray15 = [specialcharstring]
   var emptystring = ""
   var count = 0
 
@@ -32,7 +39,7 @@ function writePassword() {
         console.log("characeter string is: "+characterstring)
         console.log("the passwords length is: "+passwordlength)
 
-        var case1 = passwordcharacters.includes('lowercase')||passwordcharacters.includes('uppercase')||passwordcharacters.includes('numeric')||passwordcharacters.includes('special characters')
+        var case1 = passwordcharacters.includes('lowercase')&&passwordcharacters.includes('uppercase')&&passwordcharacters.includes('numeric')&&passwordcharacters.includes('special characters')
         var case2 = passwordcharacters.includes('lowercase')||passwordcharacters.includes('uppercase')||passwordcharacters.includes('numeric')
         var case3 = passwordcharacters.includes('lowercase')
 
