@@ -56,354 +56,312 @@ function writePassword() {
         var case15 = passwordcharacters.includes('special characters')
 
 
-        if(case1) {
+            if(case1) {
+                var index= Math.floor(Math.random()*(characterstring.length))
+                var indexmix = Math.floor(Math.random()*(mixarray.length))
+                var mixarrayindexlength = mixarray[indexmix].length
+                var index2 = Math.floor(Math.random()*(mixarrayindexlength))
+
+                console.log("Conditional statment is working")
+                console.log("Index is working and is: "+ index)
+
+                emptystring = emptystring + mixarray[indexmix][index2]
+
+                console.log("Empty string is working and is: "+ emptystring)
+
+                count++
+
+                console.log("The count is: "+count)
+                console.log("case1 was triggered")
+                
+            }
+        
+            else if(case2) {
+              var index= Math.floor(Math.random()*(characterstring.length))
+              var indexmix = Math.floor(Math.random()*(mixarray2.length))
+              var mixarrayindexlength2 = mixarray2[indexmix].length
+              var index2 = Math.floor(Math.random()*(mixarrayindexlength2))
+
+              console.log("Conditional statment is working")
+              console.log("Index is working and is: "+ index)
+
+              emptystring = emptystring + mixarray2[indexmix][index2]
+
+              console.log("Empty string is working and is: "+ emptystring)
+
+              count++
+
+              console.log("The count is: "+count)
+              console.log("case2 was triggered")
+                    
+                }
+
+              else if(case3) {
+                  var index= Math.floor(Math.random()*(characterstring.length))
+                  var indexmix = Math.floor(Math.random()*(mixarray3.length))
+                  var mixarrayindexlength3 = mixarray3[indexmix].length
+                  var index2 = Math.floor(Math.random()*(mixarrayindexlength3))
+
+                  console.log("Conditional statment is working")
+                  console.log("Index is working and is: "+ index)
+
+                  emptystring = emptystring + mixarray3[indexmix][index2]
+
+                  console.log("Empty string is working and is: "+ emptystring)
+
+                  count++
+
+                  console.log("The count is: "+count)
+                  console.log("case3 was triggered")
+                  
+              }
+
+              else if(case4) {
+                var index= Math.floor(Math.random()*(characterstring.length))
+                var indexmix = Math.floor(Math.random()*(mixarray4.length))
+                var mixarrayindexlength4 = mixarray4[indexmix].length
+                var index2 = Math.floor(Math.random()*(mixarrayindexlength4))
+
+                console.log("Conditional statment is working")
+                console.log("Index is working and is: "+ index)
+
+                emptystring = emptystring + mixarray4[indexmix][index2]
+
+                console.log("Empty string is working and is: "+ emptystring)
+
+                count++
+
+                console.log("The count is: "+count)
+                console.log("case4 was triggered")
+                
+            }
+
+            else if(case5) {
+              var index= Math.floor(Math.random()*(characterstring.length))
+              var indexmix = Math.floor(Math.random()*(mixarray5.length))
+              var mixarrayindexlength5 = mixarray5[indexmix].length
+              var index2 = Math.floor(Math.random()*(mixarrayindexlength5))
+
+              console.log("Conditional statment is working")
+              console.log("Index is working and is: "+ index)
+
+              emptystring = emptystring + mixarray5[indexmix][index2]
+
+              console.log("Empty string is working and is: "+ emptystring)
+
+              count++
+
+              console.log("The count is: "+count)
+              console.log("case5 was triggered")
+              
+          }
+
+          else if(case6) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray.length))
-            var mixarrayindexlength = mixarray[indexmix].length
-            var index2 = Math.floor(Math.random()*(mixarrayindexlength))
+            var mixarrayindexlength6 = mixarray6[indexmix].length
+            var index2 = Math.floor(Math.random()*(mixarrayindexlength6))
 
             console.log("Conditional statment is working")
             console.log("Index is working and is: "+ index)
 
-            emptystring = emptystring + mixarray[indexmix][index2]
+            emptystring = emptystring + mixarray6[indexmix][index2]
 
             console.log("Empty string is working and is: "+ emptystring)
 
             count++
 
             console.log("The count is: "+count)
+            console.log("case6 was triggered")
             
-        }
-        else{
-          console.log("Didnt work")
-        }
+          }
 
-        if(case2) {
-          var index= Math.floor(Math.random()*(characterstring.length))
-          var indexmix = Math.floor(Math.random()*(mixarray2.length))
-          var mixarrayindexlength2 = mixarray2[indexmix].length
-          var index2 = Math.floor(Math.random()*(mixarrayindexlength2))
+          else if(case7) {
+            var index= Math.floor(Math.random()*(characterstring.length))
+            var indexmix = Math.floor(Math.random()*(mixarray7.length))
+            var mixarrayindexlength7 = mixarray7[indexmix].length
+            var index2 = Math.floor(Math.random()*(mixarrayindexlength7))
 
-          console.log("Conditional statment is working")
-          console.log("Index is working and is: "+ index)
+            console.log("Conditional statment is working")
+            console.log("Index is working and is: "+ index)
 
-          emptystring = emptystring + mixarray2[indexmix][index2]
+            emptystring = emptystring + mixarray7[indexmix][index2]
 
-          console.log("Empty string is working and is: "+ emptystring)
+            console.log("Empty string is working and is: "+ emptystring)
 
-          count++
+            count++
 
-          console.log("The count is: "+count)
-          
-      }
-      else{
-        console.log("Didnt work")
-      }
+            console.log("The count is: "+count)
+            console.log("case7 was triggered")
+            
+          }
 
+          else if(case8) {
+            var index= Math.floor(Math.random()*(characterstring.length))
+            var indexmix = Math.floor(Math.random()*(mixarray8.length))
+            var mixarrayindexlength8 = mixarray8[indexmix].length
+            var index2 = Math.floor(Math.random()*(mixarrayindexlength8))
 
-      if(case3) {
-        var index= Math.floor(Math.random()*(characterstring.length))
-        var indexmix = Math.floor(Math.random()*(mixarray3.length))
-        var mixarrayindexlength3 = mixarray3[indexmix].length
-        var index2 = Math.floor(Math.random()*(mixarrayindexlength3))
+            console.log("Conditional statment is working")
+            console.log("Index is working and is: "+ index)
 
-        console.log("Conditional statment is working")
-        console.log("Index is working and is: "+ index)
+            emptystring = emptystring + mixarray8[indexmix][index2]
 
-        emptystring = emptystring + mixarray3[indexmix][index2]
+            console.log("Empty string is working and is: "+ emptystring)
 
-        console.log("Empty string is working and is: "+ emptystring)
+            count++
 
-        count++
+            console.log("The count is: "+count)
+            console.log("case8 was triggered")
+            
+          }
 
-        console.log("The count is: "+count)
-        
-    }
-    else{
-      console.log("Didnt work")
-    }
+          else if(case9) {
+            var index= Math.floor(Math.random()*(characterstring.length))
+            var indexmix = Math.floor(Math.random()*(mixarray9.length))
+            var mixarrayindexlength9 = mixarray9[indexmix].length
+            var index2 = Math.floor(Math.random()*(mixarrayindexlength9))
 
+            console.log("Conditional statment is working")
+            console.log("Index is working and is: "+ index)
 
-    if(case4) {
-      var index= Math.floor(Math.random()*(characterstring.length))
-      var indexmix = Math.floor(Math.random()*(mixarray4.length))
-      var mixarrayindexlength4 = mixarray4[indexmix].length
-      var index2 = Math.floor(Math.random()*(mixarrayindexlength4))
+            emptystring = emptystring + mixarray9[indexmix][index2]
 
-      console.log("Conditional statment is working")
-      console.log("Index is working and is: "+ index)
+            console.log("Empty string is working and is: "+ emptystring)
 
-      emptystring = emptystring + mixarray4[indexmix][index2]
+            count++
 
-      console.log("Empty string is working and is: "+ emptystring)
+            console.log("The count is: "+count)
+            console.log("case9 was triggered")
+            
+          }
 
-      count++
+          else if(case10) {
+            var index= Math.floor(Math.random()*(characterstring.length))
+            var indexmix = Math.floor(Math.random()*(mixarray10.length))
+            var mixarrayindexlength10 = mixarray10[indexmix].length
+            var index2 = Math.floor(Math.random()*(mixarrayindexlength10))
 
-      console.log("The count is: "+count)
-      
-  }
-  else{
-    console.log("Didnt work")
-  }
+            console.log("Conditional statment is working")
+            console.log("Index is working and is: "+ index)
 
+            emptystring = emptystring + mixarray10[indexmix][index2]
 
-  if(case5) {
-    var index= Math.floor(Math.random()*(characterstring.length))
-    var indexmix = Math.floor(Math.random()*(mixarray5.length))
-    var mixarrayindexlength5 = mixarray5[indexmix].length
-    var index2 = Math.floor(Math.random()*(mixarrayindexlength5))
+            console.log("Empty string is working and is: "+ emptystring)
 
-    console.log("Conditional statment is working")
-    console.log("Index is working and is: "+ index)
+            count++
 
-    emptystring = emptystring + mixarray5[indexmix][index2]
+            console.log("The count is: "+count)
+            console.log("case10 was triggered")
+            
+          }
 
-    console.log("Empty string is working and is: "+ emptystring)
+          else if(case11) {
+            var index= Math.floor(Math.random()*(characterstring.length))
+            var indexmix = Math.floor(Math.random()*(mixarray11.length))
+            var mixarrayindexlength11 = mixarray11[indexmix].length
+            var index2 = Math.floor(Math.random()*(mixarrayindexlength11))
 
-    count++
+            console.log("Conditional statment is working")
+            console.log("Index is working and is: "+ index)
 
-    console.log("The count is: "+count)
-    
-}
-else{
-  console.log("Didnt work")
-}
+            emptystring = emptystring + mixarray11[indexmix][index2]
 
+            console.log("Empty string is working and is: "+ emptystring)
 
-if(case6) {
-  var index= Math.floor(Math.random()*(characterstring.length))
-  var indexmix = Math.floor(Math.random()*(mixarray.length))
-  var mixarrayindexlength6 = mixarray6[indexmix].length
-  var index2 = Math.floor(Math.random()*(mixarrayindexlength6))
+            count++
 
-  console.log("Conditional statment is working")
-  console.log("Index is working and is: "+ index)
+            console.log("The count is: "+count)
+            console.log("case11 was triggered")
+            
+          }
 
-  emptystring = emptystring + mixarray6[indexmix][index2]
+          else if(case12) {
+            var index= Math.floor(Math.random()*(characterstring.length))
+            var indexmix = Math.floor(Math.random()*(mixarray12.length))
+            var mixarrayindexlength12 = mixarray12[indexmix].length
+            var index2 = Math.floor(Math.random()*(mixarrayindexlength12))
 
-  console.log("Empty string is working and is: "+ emptystring)
+            console.log("Conditional statment is working")
+            console.log("Index is working and is: "+ index)
 
-  count++
+            emptystring = emptystring + mixarray12[indexmix][index2]
 
-  console.log("The count is: "+count)
-  
-}
-else{
-console.log("Didnt work")
-}
+            console.log("Empty string is working and is: "+ emptystring)
 
+            count++
 
-if(case7) {
-  var index= Math.floor(Math.random()*(characterstring.length))
-  var indexmix = Math.floor(Math.random()*(mixarray7.length))
-  var mixarrayindexlength7 = mixarray7[indexmix].length
-  var index2 = Math.floor(Math.random()*(mixarrayindexlength7))
+            console.log("The count is: "+count)
+            console.log("case12 was triggered")
+            
+          }
 
-  console.log("Conditional statment is working")
-  console.log("Index is working and is: "+ index)
+          else if(case13) {
+            var index= Math.floor(Math.random()*(characterstring.length))
+            var indexmix = Math.floor(Math.random()*(mixarray13.length))
+            var mixarrayindexlength13 = mixarray13[indexmix].length
+            var index2 = Math.floor(Math.random()*(mixarrayindexlength13))
 
-  emptystring = emptystring + mixarray7[indexmix][index2]
+            console.log("Conditional statment is working")
+            console.log("Index is working and is: "+ index)
 
-  console.log("Empty string is working and is: "+ emptystring)
+            emptystring = emptystring + mixarray13[indexmix][index2]
 
-  count++
+            console.log("Empty string is working and is: "+ emptystring)
 
-  console.log("The count is: "+count)
-  
-}
-else{
-console.log("Didnt work")
-}
+            count++
 
+            console.log("The count is: "+count)
+            console.log("case13 was triggered")
+          }
 
-if(case8) {
-  var index= Math.floor(Math.random()*(characterstring.length))
-  var indexmix = Math.floor(Math.random()*(mixarray8.length))
-  var mixarrayindexlength8 = mixarray8[indexmix].length
-  var index2 = Math.floor(Math.random()*(mixarrayindexlength8))
+          else if(case14) {
+            var index= Math.floor(Math.random()*(characterstring.length))
+            var indexmix = Math.floor(Math.random()*(mixarray14.length))
+            var mixarrayindexlength14 = mixarray14[indexmix].length
+            var index2 = Math.floor(Math.random()*(mixarrayindexlength14))
 
-  console.log("Conditional statment is working")
-  console.log("Index is working and is: "+ index)
+            console.log("Conditional statment is working")
+            console.log("Index is working and is: "+ index)
 
-  emptystring = emptystring + mixarray8[indexmix][index2]
+            emptystring = emptystring + mixarray14[indexmix][index2]
 
-  console.log("Empty string is working and is: "+ emptystring)
+            console.log("Empty string is working and is: "+ emptystring)
 
-  count++
+            count++
 
-  console.log("The count is: "+count)
-  
-}
-else{
-console.log("Didnt work")
-}
+            console.log("The count is: "+count)
+            console.log("case14 was triggered")
+            
+          }
 
+          else if(case15) {
+            var index= Math.floor(Math.random()*(characterstring.length))
+            var indexmix = Math.floor(Math.random()*(mixarray15.length))
+            var mixarrayindexlength15 = mixarray15[indexmix].length
+            var index2 = Math.floor(Math.random()*(mixarrayindexlength15))
 
-if(case9) {
-  var index= Math.floor(Math.random()*(characterstring.length))
-  var indexmix = Math.floor(Math.random()*(mixarray9.length))
-  var mixarrayindexlength9 = mixarray9[indexmix].length
-  var index2 = Math.floor(Math.random()*(mixarrayindexlength9))
+            console.log("Conditional statment is working")
+            console.log("Index is working and is: "+ index)
 
-  console.log("Conditional statment is working")
-  console.log("Index is working and is: "+ index)
+            emptystring = emptystring + mixarray15[indexmix][index2]
 
-  emptystring = emptystring + mixarray9[indexmix][index2]
+            console.log("Empty string is working and is: "+ emptystring)
 
-  console.log("Empty string is working and is: "+ emptystring)
+            count++
 
-  count++
+            console.log("The count is: "+count)
+            console.log("case15 was triggered")
+            
+          }
 
-  console.log("The count is: "+count)
-  
-}
-else{
-console.log("Didnt work")
-}
-
-
-if(case10) {
-  var index= Math.floor(Math.random()*(characterstring.length))
-  var indexmix = Math.floor(Math.random()*(mixarray10.length))
-  var mixarrayindexlength10 = mixarray10[indexmix].length
-  var index2 = Math.floor(Math.random()*(mixarrayindexlength10))
-
-  console.log("Conditional statment is working")
-  console.log("Index is working and is: "+ index)
-
-  emptystring = emptystring + mixarray10[indexmix][index2]
-
-  console.log("Empty string is working and is: "+ emptystring)
-
-  count++
-
-  console.log("The count is: "+count)
-  
-}
-else{
-console.log("Didnt work")
-}
-
-
-if(case11) {
-  var index= Math.floor(Math.random()*(characterstring.length))
-  var indexmix = Math.floor(Math.random()*(mixarray11.length))
-  var mixarrayindexlength11 = mixarray11[indexmix].length
-  var index2 = Math.floor(Math.random()*(mixarrayindexlength11))
-
-  console.log("Conditional statment is working")
-  console.log("Index is working and is: "+ index)
-
-  emptystring = emptystring + mixarray11[indexmix][index2]
-
-  console.log("Empty string is working and is: "+ emptystring)
-
-  count++
-
-  console.log("The count is: "+count)
-  
-}
-else{
-console.log("Didnt work")
-}
-
-
-if(case12) {
-  var index= Math.floor(Math.random()*(characterstring.length))
-  var indexmix = Math.floor(Math.random()*(mixarray12.length))
-  var mixarrayindexlength12 = mixarray12[indexmix].length
-  var index2 = Math.floor(Math.random()*(mixarrayindexlength12))
-
-  console.log("Conditional statment is working")
-  console.log("Index is working and is: "+ index)
-
-  emptystring = emptystring + mixarray12[indexmix][index2]
-
-  console.log("Empty string is working and is: "+ emptystring)
-
-  count++
-
-  console.log("The count is: "+count)
-  
-}
-else{
-console.log("Didnt work")
-}
-
-
-if(case13) {
-  var index= Math.floor(Math.random()*(characterstring.length))
-  var indexmix = Math.floor(Math.random()*(mixarray13.length))
-  var mixarrayindexlength13 = mixarray13[indexmix].length
-  var index2 = Math.floor(Math.random()*(mixarrayindexlength13))
-
-  console.log("Conditional statment is working")
-  console.log("Index is working and is: "+ index)
-
-  emptystring = emptystring + mixarray13[indexmix][index2]
-
-  console.log("Empty string is working and is: "+ emptystring)
-
-  count++
-
-  console.log("The count is: "+count)
-  
-}
-else{
-console.log("Didnt work")
-}
-
-
-if(case14) {
-  var index= Math.floor(Math.random()*(characterstring.length))
-  var indexmix = Math.floor(Math.random()*(mixarray14.length))
-  var mixarrayindexlength14 = mixarray14[indexmix].length
-  var index2 = Math.floor(Math.random()*(mixarrayindexlength14))
-
-  console.log("Conditional statment is working")
-  console.log("Index is working and is: "+ index)
-
-  emptystring = emptystring + mixarray14[indexmix][index2]
-
-  console.log("Empty string is working and is: "+ emptystring)
-
-  count++
-
-  console.log("The count is: "+count)
-  
-}
-else{
-console.log("Didnt work")
-}
-
-
-if(case15) {
-  var index= Math.floor(Math.random()*(characterstring.length))
-  var indexmix = Math.floor(Math.random()*(mixarray15.length))
-  var mixarrayindexlength15 = mixarray15[indexmix].length
-  var index2 = Math.floor(Math.random()*(mixarrayindexlength15))
-
-  console.log("Conditional statment is working")
-  console.log("Index is working and is: "+ index)
-
-  emptystring = emptystring + mixarray15[indexmix][index2]
-
-  console.log("Empty string is working and is: "+ emptystring)
-
-  count++
-
-  console.log("The count is: "+count)
-  
-}
-else{
-console.log("Didnt work")
-}
 
 
       }
 
       return emptystring
       console.log(emptystring)
+      
       
   }  
 
@@ -412,6 +370,7 @@ console.log("Didnt work")
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+  
 
 }
 
