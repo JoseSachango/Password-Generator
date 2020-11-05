@@ -30,53 +30,77 @@ function writePassword() {
     //prompts for password criteria
   var passwordlength = prompt("How many characters long will your password be? (passwords can be no less than 8 characters and no more the 128 characters long)")  
   var passwordcharacters = prompt("What kind of characters do you want the password to be made of? (This can include; lowercase, uppercase, numeric, and/or special characters")
-
+  console.log("This is the length of the passchar input: "+passwordcharacters.length)
     //generatePassword function 
   function generatePassword() {
-      
+
+      console.log("This is the length of the passchar input: "+passwordcharacters.length)
       for(var i=0;i<passwordlength;i++) {
           
         console.log("characeter string is: "+characterstring)
         console.log("the passwords length is: "+passwordlength)
 
         var case1 = passwordcharacters.includes('lowercase')&&passwordcharacters.includes('uppercase')&&passwordcharacters.includes('numeric')&&passwordcharacters.includes('special characters')
-        var case2 = passwordcharacters.includes('lowercase')&&passwordcharacters.includes('uppercase')&&passwordcharacters.includes('numeric')
-        var case3 = passwordcharacters.includes('lowercase')&&passwordcharacters.includes('uppercase')
-        var case4 = passwordcharacters.includes('lowercase')
         var case5 = passwordcharacters.includes('lowercase')&&passwordcharacters.includes('special characters')&&passwordcharacters.includes('numeric')
+        var case2 = passwordcharacters.includes('lowercase')&&passwordcharacters.includes('uppercase')&&passwordcharacters.includes('numeric')
+        var case9 = passwordcharacters.includes('numeric')&&passwordcharacters.includes('special characters')&&passwordcharacters.includes('lowercase')
+        var case13 = passwordcharacters.includes('special characters')&&passwordcharacters.includes('uppercase')&&passwordcharacters.includes('lowercase')
+        var case3 = passwordcharacters.includes('lowercase')&&passwordcharacters.includes('uppercase')
         var case6 = passwordcharacters.includes('uppercase')&&passwordcharacters.includes('numeric')
         var case7 = passwordcharacters.includes('uppercase')&&passwordcharacters.includes('special characters')
-        var case8 = passwordcharacters.includes('uppercase')
-        var case9 = passwordcharacters.includes('numeric')&&passwordcharacters.includes('special characters')&&passwordcharacters.includes('lowercase')
         var case10 = passwordcharacters.includes('numeric')&&passwordcharacters.includes('lowercase')
         var case11 = passwordcharacters.includes('numeric')&&passwordcharacters.includes('special characters')
-        var case12 = passwordcharacters.includes('numeric')
-        var case13 = passwordcharacters.includes('special characters')&&passwordcharacters.includes('uppercase')&&passwordcharacters.includes('lowercase')
         var case14 = passwordcharacters.includes('special characters')&&passwordcharacters.includes('lowercase')
         var case15 = passwordcharacters.includes('special characters')
+        var case12 = passwordcharacters.includes('numeric')
+        var case8 = passwordcharacters.includes('uppercase')
+        var case4 = passwordcharacters.includes('lowercase')
+        
+
+        var casearray = [case1,case2,case3,case4,case5,case6,case7,case8,case9,case10,case11, case12,case13,case14,case15]
+
+        /*
+        function nullify(arg) {
+
+            for(let i=1;i<arg.length;i++) {
+
+              return(eval("case"+i))
+
+
+            }
+          
+        }
+
+        console.log(nullify(casearray))
+        */
 
 
             if(case1) {
-                var index= Math.floor(Math.random()*(characterstring.length))
-                var indexmix = Math.floor(Math.random()*(mixarray.length))
-                var mixarrayindexlength = mixarray[indexmix].length
-                var index2 = Math.floor(Math.random()*(mixarrayindexlength))
 
-                console.log("Conditional statment is working")
-                console.log("Index is working and is: "+ index)
+             
 
-                emptystring = emptystring + mixarray[indexmix][index2]
+                  var index= Math.floor(Math.random()*(characterstring.length))
+                  var indexmix = Math.floor(Math.random()*(mixarray.length))
+                  var mixarrayindexlength = mixarray[indexmix].length
+                  var index2 = Math.floor(Math.random()*(mixarrayindexlength))
 
-                console.log("Empty string is working and is: "+ emptystring)
+                  console.log("Conditional statment is working")
+                  console.log("Index is working and is: "+ index)
 
-                count++
+                  emptystring = emptystring + mixarray[indexmix][index2]
 
-                console.log("The count is: "+count)
-                console.log("case1 was triggered")
-                
+                  console.log("Empty string is working and is: "+ emptystring)
+
+                  count++
+
+                  console.log("The count is: "+count)
+                  console.log("case1 was triggered")
+
+              
+                    
             }
         
-            else if(case2) {
+            else if(case2&&(case15===false)) {
               var index= Math.floor(Math.random()*(characterstring.length))
               var indexmix = Math.floor(Math.random()*(mixarray2.length))
               var mixarrayindexlength2 = mixarray2[indexmix].length
@@ -96,7 +120,8 @@ function writePassword() {
                     
                 }
 
-              else if(case3) {
+              else if(case3&&(case15===false)&&(case12===false)) {
+                
                   var index= Math.floor(Math.random()*(characterstring.length))
                   var indexmix = Math.floor(Math.random()*(mixarray3.length))
                   var mixarrayindexlength3 = mixarray3[indexmix].length
@@ -116,7 +141,7 @@ function writePassword() {
                   
               }
 
-              else if(case4) {
+              else if(case4&&(case15===false)&&(case12===false)&&(case8===false)) {
                 var index= Math.floor(Math.random()*(characterstring.length))
                 var indexmix = Math.floor(Math.random()*(mixarray4.length))
                 var mixarrayindexlength4 = mixarray4[indexmix].length
@@ -136,27 +161,27 @@ function writePassword() {
                 
             }
 
-            else if(case5) {
-              var index= Math.floor(Math.random()*(characterstring.length))
-              var indexmix = Math.floor(Math.random()*(mixarray5.length))
-              var mixarrayindexlength5 = mixarray5[indexmix].length
-              var index2 = Math.floor(Math.random()*(mixarrayindexlength5))
+              else if(case5&&(case8===false)) {
+                    var index= Math.floor(Math.random()*(characterstring.length))
+                    var indexmix = Math.floor(Math.random()*(mixarray5.length))
+                    var mixarrayindexlength5 = mixarray5[indexmix].length
+                    var index2 = Math.floor(Math.random()*(mixarrayindexlength5))
 
-              console.log("Conditional statment is working")
-              console.log("Index is working and is: "+ index)
+                    console.log("Conditional statment is working")
+                    console.log("Index is working and is: "+ index)
 
-              emptystring = emptystring + mixarray5[indexmix][index2]
+                    emptystring = emptystring + mixarray5[indexmix][index2]
 
-              console.log("Empty string is working and is: "+ emptystring)
+                    console.log("Empty string is working and is: "+ emptystring)
 
-              count++
+                    count++
 
-              console.log("The count is: "+count)
-              console.log("case5 was triggered")
-              
+                    console.log("The count is: "+count)
+                    console.log("case5 was triggered")
+                    
           }
 
-          else if(case6) {
+          else if(case6&&(case15===false)&&(case4===false)) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray.length))
             var mixarrayindexlength6 = mixarray6[indexmix].length
@@ -176,7 +201,7 @@ function writePassword() {
             
           }
 
-          else if(case7) {
+          else if(case7&&(case4===false)&&(case12===false)) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray7.length))
             var mixarrayindexlength7 = mixarray7[indexmix].length
@@ -196,7 +221,7 @@ function writePassword() {
             
           }
 
-          else if(case8) {
+          else if(case8&&(case4===false)&&(case15===false)&&(case12===false)) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray8.length))
             var mixarrayindexlength8 = mixarray8[indexmix].length
@@ -216,7 +241,7 @@ function writePassword() {
             
           }
 
-          else if(case9) {
+          else if(case9&&(case8===false)) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray9.length))
             var mixarrayindexlength9 = mixarray9[indexmix].length
@@ -236,7 +261,7 @@ function writePassword() {
             
           }
 
-          else if(case10) {
+          else if(case10&&(case8===false)&&(case15===false)) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray10.length))
             var mixarrayindexlength10 = mixarray10[indexmix].length
@@ -256,7 +281,7 @@ function writePassword() {
             
           }
 
-          else if(case11) {
+          else if(case11&&(case8===false)&&(case4===false)) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray11.length))
             var mixarrayindexlength11 = mixarray11[indexmix].length
@@ -276,7 +301,7 @@ function writePassword() {
             
           }
 
-          else if(case12) {
+          else if(case12&&(case15===false)&&(case4===false)&&(case8===false)) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray12.length))
             var mixarrayindexlength12 = mixarray12[indexmix].length
@@ -296,7 +321,7 @@ function writePassword() {
             
           }
 
-          else if(case13) {
+          else if(case13&&(case12===false)) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray13.length))
             var mixarrayindexlength13 = mixarray13[indexmix].length
@@ -315,7 +340,7 @@ function writePassword() {
             console.log("case13 was triggered")
           }
 
-          else if(case14) {
+          else if(case14&&(case12===false)&&(case8===false)) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray14.length))
             var mixarrayindexlength14 = mixarray14[indexmix].length
@@ -335,7 +360,7 @@ function writePassword() {
             
           }
 
-          else if(case15) {
+          else if(case15&&(case12===false)&&(case8===false)&&(case4===false)) {
             var index= Math.floor(Math.random()*(characterstring.length))
             var indexmix = Math.floor(Math.random()*(mixarray15.length))
             var mixarrayindexlength15 = mixarray15[indexmix].length
