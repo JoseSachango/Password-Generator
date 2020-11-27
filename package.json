@@ -1,0 +1,23 @@
+{
+  "name": "Password-Generator",
+  "version": "1.0.0",
+  "description": "The following code allows the user to generate a password based on criteria that he or she specifies.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseSachango/Password-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseSachango/Password-Generator/issues"
+  },
+  "homepage": "https://github.com/JoseSachango/Password-Generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}

@@ -9,6 +9,8 @@ function writePassword() {
   var characterstring2 = characterstring.toUpperCase()
   var numberstring = "0123456789" 
   var specialcharstring = "!@#$%^&*"
+
+ 
   var mixarray = [characterstring,numberstring,specialcharstring,characterstring2]
   var mixarray2 =[characterstring,characterstring2,numberstring]
   var mixarray3 =[characterstring,characterstring2]
@@ -29,12 +31,13 @@ function writePassword() {
 
     //prompts for password criteria
   var passwordlength = prompt("How many characters long will your password be? (passwords can be no less than 8 characters and no more the 128 characters long)")  
-  var passwordcharacters = prompt("What kind of characters do you want the password to be made of? (This can include; lowercase, uppercase, numeric, and/or special characters")
+  var passwordcharacters = prompt("What kind of characters do you want the password to be made of? This can include lowercase, uppercase, numeric, and/or special characters. Type out the name of the character you want followed by a space." )
   console.log("This is the length of the passchar input: "+passwordcharacters.length)
     //generatePassword function 
   function generatePassword() {
 
       console.log("This is the length of the passchar input: "+passwordcharacters.length)
+
       for(var i=0;i<passwordlength;i++) {
           
         console.log("characeter string is: "+characterstring)
@@ -59,27 +62,14 @@ function writePassword() {
 
         var casearray = [case1,case2,case3,case4,case5,case6,case7,case8,case9,case10,case11, case12,case13,case14,case15]
 
-        /*
-        function nullify(arg) {
-
-            for(let i=1;i<arg.length;i++) {
-
-              return(eval("case"+i))
-
-
-            }
-          
-        }
-
-        console.log(nullify(casearray))
-        */
+     
 
 
             if(case1) {
 
-             
+              
 
-                  var index= Math.floor(Math.random()*(characterstring.length))
+                  var index = Math.floor(Math.random()*(characterstring.length))
                   var indexmix = Math.floor(Math.random()*(mixarray.length))
                   var mixarrayindexlength = mixarray[indexmix].length
                   var index2 = Math.floor(Math.random()*(mixarrayindexlength))

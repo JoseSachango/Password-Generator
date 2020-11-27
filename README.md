@@ -1,9 +1,33 @@
-# Password-Generator
-
+ # Password-Generator  
+![APM](https://img.shields.io/apm/l/pack)
 ## Description
-
-The following code allows the user to generate a password based on criteria that he or she specifies. 
-
+    I want to randomly generate a password that meets certain criteria so that I can create a strong password that provides greater security.
+## Table of Contents
+    
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Questions](#questions)
+* [Tests](#tests)
+* [Contributing](#contributing)
+* [Description](#description)
+            
+## Installation
+    No installation is required.
 ## Usage
-
-To run the code the user must click the generate password button. Once clicked the user will be prompted to select the length of the password. This can be between 8 and 128 characters long. After the length of the password has been selected, the user must specify what characters the he wants the password to be made of. The options are: lowercase, uppercase, numeric, and/or special characters. The user must be sure to spell the character names correctly as listed; otherwise the code will not work as intended. 
+    Click the "generate password" button and wait for the prompts to appear. Answer the prompts as instructed to recieve a complete password.
+[![Watch the video](https://imgur.com/hW4mGC0)](https://youtu.be/uZhzg7CPGD0)
+## Credits
+    N/A
+## License
+    MIT
+## Contributing
+    N/A
+## Tests
+    N/A
+## Questions
+    Questions? Contact Jose Sachango using the following:
+GitHub ~ JoseSachango @ https://github.com/JoseSachango       
+Email ~ josesachango@gmail.com
+    
