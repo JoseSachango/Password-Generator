@@ -157,7 +157,7 @@ ${badge}
     ${response.installation}
 ## Usage
     ${response.usage}
-[![Watch the video](${response.coverImageLink})](${response.video})
+[![Watch the video](${response.coverImageLink}.png)](${response.video})
 ## Credits
     ${response.credits}
 ## License
