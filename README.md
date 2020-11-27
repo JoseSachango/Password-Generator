@@ -14,10 +14,10 @@
 * [Description](#description)
             
 ## Installation
-    No installation is required.
+    No instillation required.
 ## Usage
-    Click the "generate password" button and wait for the prompts to appear. Answer the prompts as instructed to recieve a complete password.
-[![Watch the video](https://imgur.com/hW4mGC0)](https://youtu.be/uZhzg7CPGD0)
+    Click the "generate password" button and wait for the prompts to appear. Answer the prompts as instructed to recieve a complete password. See the video below for an example.
+[![Watch the video](https://imgur.com/hW4mGC0.png)](https://youtu.be/uZhzg7CPGD0)
 ## Credits
     N/A
 ## License
